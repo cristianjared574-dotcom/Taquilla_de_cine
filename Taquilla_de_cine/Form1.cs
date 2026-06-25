@@ -33,7 +33,8 @@ namespace Taquilla_de_cine
             }
             else if (tipoBoleto == "Adulto Mayor")
             {
-
+                string credencialInapam = "INAPAM-2026-VAL";
+                Boleto = new BoletoAdultoMayor(80.0f, credencialInapam);
 
             }
             else if (tipoBoleto == "General")
