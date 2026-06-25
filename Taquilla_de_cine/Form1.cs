@@ -17,6 +17,9 @@ namespace Taquilla_de_cine
         public frmPrincipal()
         {
             InitializeComponent();
+            cmbTipoBoleto.Items.Clear();
+            cmbTipoBoleto.Items.AddRange(new string[] { "General", "Estudiante", "Adulto Mayor" });
+        
         }
 
         private void btnCalcular_Click(object sender, EventArgs e)
@@ -36,7 +39,7 @@ namespace Taquilla_de_cine
             }
             else if (tipoBoleto == "General")
             {
-               
+                Boleto = new BoletoGeneral(80.00f);
             }
 
             if (Boleto != null)
