@@ -39,7 +39,7 @@ namespace Taquilla_de_cine
             }
             else if (tipoBoleto == "General")
             {
-               
+                Boleto = new BoletoGeneral(80.0f);
             }
 
             if (Boleto != null)
