@@ -27,7 +27,9 @@ namespace Taquilla_de_cine
 
             if (tipoBoleto == "Estudiante")
             {
-                
+                string matriculaInput = "EST-UTHH";
+
+                Boleto = new BoletoEstudiante(80.00f, matriculaInput);
             }
             else if (tipoBoleto == "Adulto Mayor")
             {
